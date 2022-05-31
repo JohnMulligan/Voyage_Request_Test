@@ -8,13 +8,13 @@ import axios from 'axios'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const AUTH_TOKEN = 'Token %s3e9ed2e0fa70a1a5cb6f34eb7a30ebde208ecd8f';
+const AUTH_TOKEN = 'Token 6eca1c4d65c47d438b5beb852674bacb7e38ed1d';
 
-axios.defaults.baseURL = 'https://voyages3-api.crc.rice.edu'; //'http://127.0.0.1:8000'//
+axios.defaults.baseURL = 'http://127.0.0.1:8000'; //'http://127.0.0.1:8000'//
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-axios.post('/voyages', {
+axios.post('/voyage/', {
 
   })
   .then(function (response) {
